@@ -120,7 +120,11 @@ marquee{
   box-shadow: rgba(69, 154, 203, 0.16) 0px 3px 10px, rgba(92, 150, 163, 0.23) 0px 3px 6px;
   padding: 35px;
   border-radius: 12px;
-
+  transition: .5s;
+  transform: scale(1);
+}
+.text:hover{
+  transform: scale(1.05);
 }
 .contain{
   display: flex;
@@ -218,7 +222,9 @@ marquee{
   padding: 50px;
   display: flex;
   justify-content: space-between;
-
+}
+.text-footer:hover{
+  transform: scale(1.05);
 }
 .text{
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;

@@ -104,13 +104,13 @@ section h1{
     border: 5px solid rgb(149, 191, 217);
     box-shadow: 0 4px 8px rgba(64, 61, 61, 0.2);
     border-radius: 5px;
-}
-.card img{
-    width:300px;
     transition: .3s;
     transform: scale(1);
 }
-.card img:hover{
+.card img{
+    width:300px;
+}
+.card:hover{
     transform: scale(1.05);
 }
 #icon-card{
@@ -128,9 +128,18 @@ section h1{
 #image6{
     height: 300px;
 }
-
-
-
+.star {
+    display: flex;
+    align-items: center;
+    /* gap: 5px; */
+}
+.price{
+    font-size: 20px;
+    color: rgb(0, 195, 255);
+}
+.name{
+    font-size: 20px;
+}
 /* footer */
 #image-footer{
     width: 32px;
