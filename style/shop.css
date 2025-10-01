@@ -8,19 +8,20 @@ body {
 }
 
 /* header */
-.para {
-    background-color: black;
-    text-align: center;
-    color: white;
-    padding: 5px;
-    font-size: 12px;
-}
 
 .header {
     display: flex;
     justify-content: space-between;
     background-color: white;
+    backdrop-filter: blur(5px);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index:999;
+    box-shadow: 0 2px 10px rgba(81, 159, 236, 0.6);  
 }
+
 
 .left {
     display: flex;
@@ -95,7 +96,9 @@ marquee {
     transform: scale(1.05);
     /* animation: card linear forwards .3s; */
 }
-
+.main-shop{
+    margin-top: 70px;
+}
 
 
 
@@ -132,24 +135,29 @@ marquee {
     border-radius: 8px;
     background-color: rgb(130, 189, 230);
 }
+
 .star {
     display: flex;
     align-items: center;
     /* gap: 5px; */
 }
-.price{
+
+.price {
     font-size: 20px;
     color: rgb(0, 195, 255);
 }
-.card-text{
+
+.card-text {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.name{
+
+.name {
     font-size: 20px;
 }
-.left-shop{
+
+.left-shop {
     width: 200px;
     height: auto;
     flex: 1;
@@ -158,7 +166,8 @@ marquee {
     justify-content: center;
     align-items: center;
 }
-.right-shop{
+
+.right-shop {
     flex: 1;
     height: auto;
     /* border: 1px solid black; */
@@ -166,7 +175,8 @@ marquee {
     flex-direction: column;
     gap: 25px;
 }
-.text-rightshop{
+
+.text-rightshop {
     /* background-color: rgb(160, 214, 238); */
     background-color: rgba(229, 249, 252, 0.995);
     /* background-color: white; */
@@ -178,12 +188,14 @@ marquee {
     align-items: center;
     justify-content: space-between;
 }
-.left-shop img{
+
+.left-shop img {
     width: 950px;
 
     /* border: 1px black solid; */
 }
-.on-footer{
+
+.on-footer {
     display: flex;
     /* justify-content: center; */
     align-items: center;
@@ -258,6 +270,9 @@ marquee {
 
 .footer .right {
     flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .footer .right h3 {
@@ -280,10 +295,135 @@ marquee {
     margin-top: 20px;
     flex-direction: column;
     gap: 12px;
-    margin-left: 140px;
 }
 
 .icon-foot {
     display: flex;
     gap: 10px;
+}
+
+
+
+
+/* responsive */
+/* Tablet size */
+@media (min-width: 600px) and (max-width: 1024px) {
+    .text-footershop {
+        width: 100%;
+        background-color: rgb(203, 226, 243);
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+    }
+
+    .quick {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .info {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .icon-foot {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .on-footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 23px;
+        margin-top: 100px;
+    }
+
+    .text-leftshop {
+        width: 1000px;
+        text-align: center;
+    }
+
+    .text-footershop {
+        margin-top: 50px;
+    }
+}
+
+
+
+/* responsive */
+/* phone size */
+@media (min-width: 320px) and (max-width: 599px) {
+    .link {
+        display: flex;
+        gap: 18px;
+        margin-left: 3px;
+    }
+
+    .link a {
+        text-decoration: none;
+        color: black;
+        font-size: 17px;
+    }
+
+    .left img {
+        width: 55px;
+    }
+
+    .header .right {
+        width: 15px;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 25px;
+        margin-right: 10px;
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+        margin-top: 30px;
+    }
+
+    .quick {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .info {
+        display: flex;
+    }
+
+    .icon-foot {
+        display: flex;
+        /* flex-direction: column; */
+        align-items: center;
+
+    }
+
+    .on-footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 23px;
+        margin-top: 20px;
+    }
+
+    .text-leftshop {
+        width: 350px;
+        text-align: center;
+    }
+
+    .text-rightshop {
+        padding: 10px;
+        width: 330px;
+    }
+
 }
