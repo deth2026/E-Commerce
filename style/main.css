@@ -22,6 +22,41 @@ body {
 
 }
 
+.header.right {
+    position: relative;
+    display: inline-block;
+}
+
+.badge {
+    position: absolute;
+    right: 20px;
+    bottom: 40px;
+    background: red;
+    color: white;
+    font-size: 8px;
+    font-weight: bold;
+    padding: 3px 5px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.view a {
+    text-decoration: none;
+    color: white;
+}
+
+.view button {
+    padding: 10PX 35PX;
+    margin-left: 90px;
+    margin-bottom: 12px;
+    border: none;
+    border-radius: 8px;
+    background-color: rgb(130, 189, 230);
+}
+
+
 .left {
     display: flex;
     justify-content: center;
@@ -34,8 +69,9 @@ body {
 }
 
 #icon-nav {
-    margin-top: 25px;
-    margin-right: 10px;
+    margin-top: 20px;
+    margin-right: 25px;
+    font-size: 30px;
 }
 
 .link {
@@ -83,7 +119,7 @@ body {
 }
 
 .btn-shop {
-    margin-top: 34px;
+    margin-top: 50px;
     margin-left: 1270px;
     background-color: #D2E8A0;
     border: none;
@@ -143,7 +179,7 @@ section h1 {
 }
 
 .icon-text {
-    padding: 24px;
+    padding: 10px 24px;
 }
 
 #image1 {
@@ -175,14 +211,40 @@ section h1 {
 }
 
 .alittle {
-    margin-top: 20px;
+    margin-top: 50px;
     text-align: center;
-    color: #37b1c9;
+    color: white;
+    background: #4ccee8;
+    padding: 12px;
 }
+
+.top-left {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: rgb(129, 228, 237);
+    padding: 4px 15px;
+    border-radius: 10px;
+    font-size: 14px;
+}
+.text h4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.icon-self{
+ font-size: 35px;
+}
+
 
 /* footer */
 #image-footer {
     width: 32px;
+    transition:0.3;
+}
+#image-footer:hover{
+    transform: scale(1.2);
 }
 
 .icon-shop {
@@ -193,10 +255,14 @@ section h1 {
 }
 
 .text-footer {
-    padding: 35px 50px;
+    padding: 60px 50px;
     margin-bottom: 30px;
     display: flex;
     justify-content: space-between;
+    
+}
+.text:hover{
+   transform: scale(1.05); 
 }
 
 .text {
@@ -204,7 +270,7 @@ section h1 {
     padding: 35px;
     border-radius: 12px;
     background: white;
-
+    transition: .3s;
 }
 
 .text-footershop {
@@ -297,7 +363,8 @@ section h1 {
         flex-direction: column;
         align-items: center;
     }
-    .main-home{
+
+    .main-home {
         margin-top: 70px;
     }
 
@@ -380,18 +447,24 @@ section h1 {
     .alittle {
         margin-top: 10px;
         text-align: center;
-        color: #37b1c9;
+        color: white;
+        background-color: #37b1c9;
+        padding: 10px;
     }
 
     .text-footer {
-        padding: 50px;
+        padding: 30px;
         display: flex;
         flex-direction: column;
         gap: 20px;
-        padding: 20px 50px;
-        margin-bottom: 10px;
+        margin-bottom: 8px;
     }
-    .main-home{
+
+    .text {
+        width: 260px;
+    }
+
+    .main-home {
         margin-top: 70px;
     }
 
@@ -403,6 +476,20 @@ section h1 {
     .text-footershop {
         width: 100%;
         background-color: rgb(203, 226, 243);
+    }
+
+    #icon-nav {
+        margin-top: 20px;
+        margin-right: 25px;
+        font-size: 24px;
+    }
+
+    .badge {
+        right: 18px;
+        bottom: 41px;
+        font-size: 8px;
+        font-weight: bold;
+        padding: 1px 3px;
     }
 
 

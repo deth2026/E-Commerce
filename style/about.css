@@ -13,7 +13,6 @@ body {
   display: flex;
   justify-content: space-between;
   background-color: white;
-  /* padding: 12px; */
   backdrop-filter: blur(5px);
   position: fixed;
   width: 100%;
@@ -21,6 +20,32 @@ body {
   left: 0;
   z-index: 999;
   box-shadow: 0 2px 10px rgba(81, 159, 236, 0.6);
+}
+
+.header.right {
+  position: relative;
+  display: inline-block;
+}
+
+.badge {
+  position: absolute;
+  right: 20px;
+  bottom: 40px;
+  background: red;
+  color: white;
+  font-size: 8px;
+  font-weight: bold;
+  padding: 3px 5px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#icon-nav {
+  margin-top: 20px;
+  margin-right: 25px;
+  font-size: 30px;
 }
 
 .left {
@@ -32,11 +57,6 @@ body {
 
 .left img {
   width: 70px;
-}
-
-#icon-nav {
-  margin-top: 25px;
-  margin-right: 10px;
 }
 
 .link {
@@ -65,9 +85,7 @@ body {
   align-items: center;
   justify-content: center;
   gap: 60px;
-  /* max-width: 1000px; */
-  /* margin: 50px auto; */
-  /* padding: 20px; */
+  margin-top: 50px;
 }
 
 .about-image img {
@@ -171,7 +189,6 @@ body {
 
 .profile {
   width: 250px;
-  /* border: 1px black solid; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -207,7 +224,6 @@ body {
 
 #icon-pro {
   width: 100px;
-  /* border: 1px black solid; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -218,7 +234,6 @@ body {
   justify-content: space-between;
   border-top: 1px black solid;
   padding: 32px;
-  /* border-bottom: 1px black solid; */
 
 }
 
@@ -234,7 +249,11 @@ body {
 
 /* footer */
 #image-footer {
-  width: 32px;
+    width: 32px;
+    transition:0.3;
+}
+#image-footer:hover{
+    transform: scale(1.2);
 }
 
 .icon-shop {
@@ -250,9 +269,6 @@ body {
   justify-content: space-between;
 }
 
-/* .text-footer:hover{
-  transform: scale(1.05);
-} */
 .text {
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
   padding: 35px;
@@ -322,6 +338,8 @@ body {
   gap: 10px;
 }
 
+/* responsive */
+/* Tablet size */
 @media (min-width: 600px) and (max-width: 1024px) {
   .text-footershop {
     width: 100%;
@@ -382,7 +400,13 @@ body {
   }
 
   .text {
-    width: 600px;
+    width: 680px;
+
+  }
+
+  .team {
+    padding: 20px 50px;
+
   }
 
   .text-contain {
@@ -394,6 +418,10 @@ body {
     margin-top: 30px;
     width: 270px;
     border-radius: 20px;
+  }
+
+  .contain {
+    margin-top: 2px;
   }
 }
 
@@ -477,18 +505,6 @@ body {
     gap: 12px;
   }
 
-  /* .text-footer {
-    padding: 50px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-  }
-
-  .text p,
-  .text h4 {
-    text-align: center;
-  } */
-
   .text-footershop {
     width: 100%;
     background-color: rgb(203, 226, 243);
@@ -561,6 +577,17 @@ body {
     margin-top: 30px;
   }
 
+  #icon-nav {
+    margin-top: 20px;
+    margin-right: 25px;
+    font-size: 24px;
+  }
 
-
+  .badge {
+    right: 18px;
+    bottom: 41px;
+    font-size: 8px;
+    font-weight: bold;
+    padding: 1px 3px;
+  }
 }

@@ -23,6 +23,32 @@ body {
     box-shadow: 0 2px 10px rgba(81, 159, 236, 0.6);
 }
 
+.header.right {
+    position: relative;
+    display: inline-block;
+}
+
+.badge {
+    position: absolute;
+    right: 20px;
+    bottom: 40px;
+    background: red;
+    color: white;
+    font-size: 8px;
+    font-weight: bold;
+    padding: 3px 5px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#icon-nav {
+    margin-top: 20px;
+    margin-right: 25px;
+    font-size: 30px;
+}
+
 .left {
     display: flex;
     justify-content: center;
@@ -34,10 +60,7 @@ body {
     width: 70px;
 }
 
-#icon-nav {
-    margin-top: 25px;
-    margin-right: 10px;
-}
+
 
 .link {
     display: flex;
@@ -60,32 +83,13 @@ body {
 }
 
 /* main */
-/* .head-contact{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100px;
-    background-image: url(../photo/contact2.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-.head-contact h1{
-    font-size: 45px;
-    font-weight: bold;
-    -webkit-text-fill-color: transparent;
-    -webkit-text-stroke: 1px rgb(73, 132, 192);
-} */
 .left-contact {
     border-radius: 12px;
     padding: 24px;
     display: flex;
     flex-direction: column;
     gap: 12px;
-}
-
-.left-contact img {
-    width: 80px;
+    margin-top: 20px;
 }
 
 .icon-contact {
@@ -101,11 +105,9 @@ body {
 .contain-main {
     display: flex;
     justify-content: space-around;
+    margin-top: 70px;
 }
 
-/* .contain-logo img{
-    width: 400px;
-} */
 .contact-contant {
     display: flex;
     justify-content: center;
@@ -117,7 +119,7 @@ body {
     gap: 8px;
     border-radius: 12px;
     box-shadow: 0 4px 8px rgba(64, 61, 61, 0.2);
-    background-color: rgba(255, 255, 255, 0.951);
+    /* background-color: rgba(236, 235, 235, 0.951); */
 }
 
 .contact-contant p {
@@ -189,7 +191,9 @@ input {
 
 main {
     height: 100vh;
-    background-color: rgb(175, 207, 231);
+    /* background-color: rgb(225, 241, 254); */
+    /* background: linear-gradient(90deg, #92d0fc, #cdf0fc); */
+    background: linear-gradient(to bottom, #89cde9, #f4f2f2);
 }
 
 .box-contact {
@@ -278,8 +282,12 @@ section {
 }
 
 /* footer */
-image-footer {
+#image-footer {
     width: 32px;
+    transition:0.3;
+}
+#image-footer:hover{
+    transform: scale(1.2);
 }
 
 .icon-shop {
@@ -381,6 +389,8 @@ iframe {
     height: 350px;
 }
 
+/* responsive */
+/* Tablet size */
 @media (min-width: 600px) and (max-width: 1024px) {
     .text-footershop {
         width: 100%;
@@ -422,11 +432,13 @@ iframe {
         height: 90vh;
     }
 
+    #icon-nav {
+        margin-top: 0px;
+    }
+
     .contain-main {
         display: flex;
         flex-direction: column-reverse;
-        /* justify-content: space-between; */
-        /* background-color: gold; */
         height: 100vh;
     }
 
@@ -555,13 +567,13 @@ iframe {
 
     #form {
         height: 30px;
-        width: 130px;
+        width: 125px;
         margin-top: 24px;
     }
 
     .message {
         margin-top: 10px;
-        width: 285px;
+        width: 273px;
         height: 100px;
     }
 
@@ -595,6 +607,7 @@ iframe {
 
     main {
         height: 100vh;
+        /* background-color: white; */
         background-color: white;
     }
 
@@ -604,10 +617,11 @@ iframe {
 
     .left-contact {
         border-radius: 12px;
-        padding: 5px 12px;
+        padding: 0px 12px;
         display: flex;
         flex-direction: column;
         gap: 12px;
+        margin-top: 0px;
     }
 
     .info-contact {
@@ -615,6 +629,13 @@ iframe {
         margin-top: 25px;
         flex-direction: column;
         gap: 12px;
+    }
+
+    .char {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
     }
 
     .info-contact1 {
@@ -625,12 +646,25 @@ iframe {
     }
 
     .contact-contant {
-        width: 370px;
+        width: 300px;
         height: 110px;
-        background-color: #9fd5e7;
+        background-color: #b8e5f4;
+        margin-left: 9%;
     }
 
+    #icon-nav {
+        margin-top: 20px;
+        margin-right: 25px;
+        font-size: 24px;
+    }
 
+    .badge {
+        right: 18px;
+        bottom: 41px;
+        font-size: 8px;
+        font-weight: bold;
+        padding: 1px 3px;
+    }
 
     .footer {
         display: flex;

@@ -18,8 +18,31 @@ body {
     width: 100%;
     top: 0;
     left: 0;
-    z-index:999;
-    box-shadow: 0 2px 10px rgba(81, 159, 236, 0.6);  
+    z-index: 999;
+    box-shadow: 0 2px 10px rgba(81, 159, 236, 0.6);
+}
+.header.right {
+    position: relative;
+    display: inline-block;
+}
+.badge {
+    position: absolute;
+    right: 20px;
+    bottom: 40px;
+    background: red;
+    color: white;
+    font-size: 8px;
+    font-weight: bold;
+    padding: 3px 5px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#icon-nav {
+    margin-top: 20px;
+    margin-right: 25px;
+    font-size: 30px;
 }
 
 
@@ -34,10 +57,6 @@ body {
     width: 70px;
 }
 
-#icon-nav {
-    margin-top: 25px;
-    margin-right: 10px;
-}
 
 .link {
     display: flex;
@@ -96,7 +115,8 @@ marquee {
     transform: scale(1.05);
     /* animation: card linear forwards .3s; */
 }
-.main-shop{
+
+.main-shop {
     margin-top: 70px;
 }
 
@@ -135,6 +155,7 @@ marquee {
     border-radius: 8px;
     background-color: rgb(130, 189, 230);
 }
+
 
 .star {
     display: flex;
@@ -197,11 +218,18 @@ marquee {
 
 .on-footer {
     display: flex;
-    /* justify-content: center; */
     align-items: center;
-    /* align-items: center; */
     gap: 23px;
     margin-top: 100px;
+}
+
+.top-left {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: rgb(129, 228, 237);
+    padding: 4px 15px;
+    border-radius: 10px;
 }
 
 
@@ -209,6 +237,10 @@ marquee {
 /* footer */
 #image-footer {
     width: 32px;
+    transition:0.3;
+}
+#image-footer:hover{
+    transform: scale(1.2);
 }
 
 .icon-shop {
@@ -342,7 +374,7 @@ marquee {
         flex-direction: column;
         align-items: center;
         gap: 23px;
-        margin-top: 100px;
+        margin-top: 20px;
     }
 
     .text-leftshop {
@@ -407,7 +439,18 @@ marquee {
         align-items: center;
 
     }
-
+    #icon-nav {
+        margin-top: 20px;
+        margin-right: 25px;
+        font-size: 24px;
+    }
+    .badge {
+    right: 18px;
+    bottom: 41px;
+    font-size: 8px;
+    font-weight: bold;
+    padding: 1px 3px;
+    }
     .on-footer {
         display: flex;
         flex-direction: column;
@@ -425,5 +468,4 @@ marquee {
         padding: 10px;
         width: 330px;
     }
-
 }
